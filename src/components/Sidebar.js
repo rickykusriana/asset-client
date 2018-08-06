@@ -17,7 +17,7 @@ class Sidebar extends Component {
                         if ( ! prop.redirect && ! prop.hidden)
                         return (
                             <li key={key}>
-                                <NavLink to={prop.path} activeClassName="active">
+                                <NavLink to={prop.path} activeClassName="active" replace>
                                     <span className={prop.icon}></span>{prop.name}
                                 </NavLink>
                             </li>
